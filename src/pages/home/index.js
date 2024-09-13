@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { StyleSheet, Text, View, Image, TouchableOpacity, Modal, StatusBar } from 'react-native';
-import Slider from "@react-native-comunity/slider";
+import Slider from "@react-native-community/slider";
 import { ModalPassword } from "../../components/modal"
 
 const charset="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUV01234567i9"
@@ -14,7 +14,7 @@ export function Home() {
 function generatePassword() {
   let password = "";
   
-  for (let i=0, n=charset.lenght; i<size; i++) {
+  for (let i=0, n=charset.length; i<size; i++) {
     password+= charset.charAt(Math.floor(Math.random() * n));
   }
   
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
   area: {
     marginTop: 14,
     marginBottom: 14,
-    width: "80",
+    width: "80%",
     backgorundColor: "white",
     borderRadius: 8,
     padding: 6,
